@@ -1,168 +1,94 @@
-
 body {
-
     font-family: Arial, sans-serif;
-  
     margin: 0;
-  
     padding: 0;
-  
     background-color: #f9f9f9;
-  
     color: #333;
-  
   }
-  
-  
   
   .container {
-  
     max-width: 800px;
-  
     margin: 20px auto;
-  
     padding: 20px;
-  
     background-color: #fff;
-  
     border-radius: 8px;
-  
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  
   }
-  
-  
   
   h1, h2 {
-  
     text-align: center;
-  
     margin-bottom: 20px;
-  
   }
-  
-  
   
   .settings {
-  
     background-color: #f2f2f2;
-  
     padding: 15px;
-  
     margin-bottom: 20px;
-  
     border-radius: 5px;
-  
   }
-  
-  
   
   .setting-item {
-  
     margin-bottom: 10px;
-  
   }
-  
-  
   
   label {
-  
     font-weight: bold;
-  
   }
-  
-  
   
   table {
-  
     width: 100%;
-  
     border-collapse: collapse;
-  
     margin-bottom: 20px;
-  
   }
-  
-  
   
   th, td {
-  
     border: 1px solid #ccc;
-  
     padding: 10px;
-  
     text-align: center;
-  
   }
-  
-  
   
   th {
-  
     background-color: #f2f2f2;
-  
   }
-  
-  
   
   .input-row {
-  
     display: flex;
-  
     justify-content: space-between;
-  
     align-items: center;
-  
     gap: 10px;
-  
   }
-  
-  
   
   button {
-  
     padding: 5px 15px;
-  
     background-color: #007BFF;
-  
     color: white;
-  
     border: none;
-  
     border-radius: 4px;
-  
     cursor: pointer;
-  
   }
-  
-  
   
   button:hover {
-  
     background-color: #0056b3;
-  
   }
-  
-  
   
   .summary, .recommendation {
-  
     text-align: center;
-  
     font-size: 18px;
-  
     font-weight: bold;
-  
   }
   
-  
-  
-  .actions {
-  
-    text-align: center;
-  
-    margin-top: 20px;
-  
+  .progress {
+    background-color: #ddd;
+    height: 20px;
+    width: 100%;
+    border-radius: 10px;
+    margin: 10px 0;
   }
   
+  #progress-bar {
+    background-color: #28a745;
+    height: 100%;
+    width: 0%;
+    border-radius: 10px;
+  }
   

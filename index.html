@@ -1,150 +1,79 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-
   <meta charset="UTF-8">
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>Daily Spending Tracker</title>
-
   <link rel="stylesheet" href="styles.css">
-
 </head>
-
 <body>
-
   <div class="container">
-
     <h1>Daily Spending Tracker</h1>
 
-    
-
     <!-- Settings -->
-
     <div class="settings">
-
       <h2>Settings</h2>
-
       <div class="setting-item">
-
         <label for="total-days">Total Days:</label>
-
         <input type="number" id="total-days" value="18">
-
       </div>
-
       <div class="setting-item">
-
         <label for="savings-goal">Savings Goal (PKR):</label>
-
         <input type="number" id="savings-goal" value="3500">
-
       </div>
-
       <div class="setting-item">
-
         <label for="daily-payment">Daily Payment (PKR):</label>
-
         <input type="number" id="daily-payment" value="500">
-
       </div>
-
       <div class="setting-item">
-
         <label for="weekend-payment">Weekend Payment (PKR):</label>
-
         <input type="number" id="weekend-payment" value="1000">
-
       </div>
-
       <button id="update-settings">Update Settings</button>
-
     </div>
-
-    
 
     <!-- Spending Tracker Table -->
-
     <table>
-
       <thead>
-
         <tr>
-
           <th>Date</th>
-
           <th>Day</th>
-
           <th>Payment (PKR)</th>
-
           <th>Spent (PKR)</th>
-
           <th>Saved (PKR)</th>
-
+          <th>Actions</th>
         </tr>
-
       </thead>
-
       <tbody id="tracker-table">
-
         <!-- Rows will be dynamically generated -->
-
       </tbody>
-
     </table>
 
-    
-
     <!-- Add Spending -->
-
     <div class="input-row">
-
       <label for="date">Date:</label>
-
       <input type="date" id="date">
-
       <label for="spent">Spent (PKR):</label>
-
       <input type="number" id="spent" placeholder="Enter amount">
-
       <button id="add-entry">Add Entry</button>
-
     </div>
-
-    
 
     <!-- Summary -->
-
     <div class="summary">
-
       <p>Total Saved: PKR <span id="total-saved">0</span></p>
-
     </div>
-
+    <div class="progress">
+      <div id="progress-bar"></div>
+    </div>
     <div class="recommendation">
-
       <p id="recommendation-text">Your savings recommendation will appear here.</p>
-
     </div>
-
-    
 
     <!-- Reset Button -->
-
     <div class="actions">
-
       <button id="reset">Reset Data</button>
-
     </div>
-
   </div>
-
   <script src="script.js"></script>
-
 </body>
-
 </html>
-
